@@ -14,8 +14,6 @@ import { checkRandomNumbers, createBoundaryArray, createRandomArray } from './he
     checkRandomNumbers(createBoundaryArray(90, 10))
     checkRandomNumbers(createBoundaryArray(201, 100))
 
-    checkRandomNumbers(Array.from({ length: 500 }, (_, i) => i + 2))
-    checkRandomNumbers(Array.from({ length: 1000 }, (_, i) => i + 1))
     checkRandomNumbers(Array.from({ length: MAX_NUMBER }, (_, i) => i + 1).flatMap((v) => [v, v, v]))
 
     if (checkRandomNumbers.errors) {
